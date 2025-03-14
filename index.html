@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="header">
+        <a href="https://unishdhungana.com.np"><img src="images/logo-white.png" alt="unish-dhungana"></a>
+        <h1>Password Strength Checker</h1>
+    </div>
+    <div class="content">
+        <div class="container">
+            <form action="" id="form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" placeholder="Enter first name" required>
+                
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" placeholder="Enter last name" required>
+                
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <button type="button" id="toggle-password" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+                </div>
+
+                <div id="strength-indicator">
+                    <span id="strength-text">Strength: </span>
+                    <div id="strength-bar"></div>
+                </div>
+
+                <div class="msg">
+                    <p class="msg-box"></p>
+                </div>
+
+                <button type="submit">Check</button>
+                
+            </form>
+        </div>
+        <div id="password-tips">
+            <h3>How to Create a Strong Password?</h3>
+            <ul>
+                <li>Use at least 12-16 characters (longer is better).</li>
+                <li>Mix uppercase, lowercase, numbers, and special characters.</li>
+                <li>Avoid common words, names, or keyboard patterns.</li>
+                <li>Use a passphrase (e.g., `Blue!Pizza89$Horse`).</li>
+                <li>Don't reuse passwords across different sites.</li>
+                <li>Use a password manager to store your passwords securely.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
