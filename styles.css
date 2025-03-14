@@ -29,6 +29,10 @@ body {
     padding: 0.5rem 0;
 }
 
+.header a {
+    display: inline-block;
+}
+
 .header img {
     display: block; 
     margin: 0 auto;
@@ -177,4 +181,29 @@ button:hover {
     left: 0;
     color: var(--forth-color);
     font-weight: bold;
+}
+
+
+.back-button {
+    display: inline-block;
+    padding: 12px 30px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: var(--forth-color); 
+    color: var(--tertiary-color); 
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
+}
+
+.back-button:hover {
+    background-color: var(--tertiary-color);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+    color: var(--forth-color);
 }
